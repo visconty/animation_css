@@ -1,0 +1,88 @@
+body{
+  overflow:hidden;
+}
+.sprite{
+  display:block;
+  background: url('../img/mario.jpg');
+  height: 130px;
+  width: 130px;
+    position:relative;
+  -webkit-animation: spriteAnimation 1.5s steps(1) infinite, flyright 2.5s  linear infinite;
+  -moz-animation:spriteAnimation 1.5s  steps(1) infinite, flyright 2.5s linear infinite;
+  -o-animation: spriteAnimation 1.5s steps(1) infinite, flyright 2.5s linear infinite;
+  animation:   spriteAnimation 1.5s steps(1) infinite, flyright 2.5s linear infinite;  
+}
+
+.audio {
+
+}
+@-webkit-keyframes spriteAnimation {
+  from{
+     background-position: 0px;  
+  }
+  to{
+    background-position:-1600px;
+   }
+}
+@-webkit-keyframes flyright {
+  from{
+     left: -10%; 
+    }
+  to{
+    left:110%;
+   }
+}
+@-moz-keyframes flyright {
+  from{
+     left: -10%; 
+    }
+  to{
+    left:110%;
+   }
+}
+
+
+@-moz-keyframes spriteAnimation {
+  from{
+     background-position: 0px; 
+  }
+  to{
+    background-position:-1600px;
+  }
+}
+@-o-keyframes flyright {
+  from{
+     left: -10%; 
+    
+  }
+  to{
+    left:110%;
+   
+  }
+}
+@-o-keyframes spriteAnimation {
+  from{
+     background-position: 0px; 
+  }
+  to{
+    background-position:-1600px;
+  }
+}
+@keyframes flyright {
+  from{
+     left: -10%; 
+    
+  }
+  to{
+    left:110%;
+   
+  }
+}
+@keyframes spriteAnimation {
+  from{
+     background-position: 0px; 
+  }
+  to{
+    background-position:-1600px;
+  }
+}
